@@ -1,31 +1,97 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width"/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
-    <title>Validation</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header> 
-      <img src="src/img/Jaibatronix.png" id="logo"/>
-    </header>
-    <main>
-      <div class="subtitle" style="border:2px solid rgb(0,0,0)" >
-        <h1>Validación de tarjeta</h1>
-        </div><br>
-      <div class="textarea"  style="border:2px solid rgb(0,0,0)" >
-      <h3>Ingrese los 16 dígitos de su tarjeta</h3>
-      <input type="text" name="cardNumber" id="cardNumber" value="a"/></br>
-      <button type="submit" id="validator"> Validar </button>
-      </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=2" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&display=swap"
+    rel="stylesheet">
+  <title>Validation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header id="main-header">
+    <a id="logo-header" href="index.html">
+      <span class="site-name">JAIBATRONIX</span></a>
+    <!--<div class="subtitle" style="border:2px solid rgb(0,0,0)" >
+      <img src="/img/Logo.png" id="logo"/>
+    </div>-->
+  </header>
+  <br><br><br><br>
+  <main>
+    <div class="subtitle">
+      <label>Realice su pago</label>
+    </div>
+    <div class="product" id="product">
+      <p>- Dell U4320Q 43 pulgadas 2160p 4K UltraSharp --- $30,050.00</p>
+    </div>
+    <!--DIVS DE LOS CHECKLIST-->
+
+    <div class="listArea" id="listArea">
+
+      <form id="bankOptions" class="bankOptions">
+        <br>
+        <p>Seleccione el tipo de tarjeta</p>
+     
+        <select id="credit" class="credit" name = "tarjetas">
+          <option>Crédito</option>
+          <option>Débito</option>
+        </select>
+        <!-- <legend> Crédito </legend>
+        <div>
+          <input type="radio" id="visa" name="visa">
+          <label for="visa">Visa</label>
+        </div>
+        <div>
+          <input type="radio" id="mastercard" name="mastercard" >
+          <label for="mastercard">MasterCard</label>
+        </div> -->
+        <!-- <br>
+        <legend> Débito </legend>
+        <div>
+          <input type="radio" id="visaD" name="debit" value="visa">
+          <label for="visa">Visa</label>
+        </div>
+        <div>
+          <input type="radio" id="mastercardD" name="debit" value="mastercard">
+          <label for="mastercard">MasterCard</label>
+        </div> -->
+      </form>
+    </div>
+
+
+    <!--DIVS DE LOS NUMEROS DE TARJETA-->
+    <div class="textArea" id="textArea">
+      <form id="card-form" class="card-form">
+        
+        <label id="data-pay">Datos del pago</label>
+        <br><br>
+        <label>Número de tarjeta</label>
+        <br>
+        <input type="text" name="cardNumber" id="cardNumber"  maxlength="16" required>
+        <br><br>
+        <label>CCV</label>
+        <input type="text" name="ccvText" id="ccvText" maxlength="3" required>
+        <br><br>
+        <label>Fecha de vencimiento</label>
+        <input type="text" name="date" id="date" placeholder="MM/YYYY" maxlength="7" required>
+        <br><br>
+        <button type="button" name="btnValidator" id="btnValidator"> Realizar pago </button>
+        <br>
+        <p id="validationMessage" class="validationMessage"></p>
+      </form>
+    </div>
     </main>
-    <footer>
-      <div class="footer" style="border:2px solid rgb(0,0,0)" >
-        <h
-      </div>
-    </footer>
-    <script src="index.js" type="module"></script>
-  </body>
+  <br>
+  <footer id="main-footer">
+    <div class="footer">
+      <h3>Todos los derechos reservados</h3>
+      <h3>Jaibatronix inc. 2022</h3>
+    </div>
+  </footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>

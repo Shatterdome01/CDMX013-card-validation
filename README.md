@@ -16,7 +16,7 @@
 El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn),
 también llamado algoritmo de módulo 10, es un método de suma de verificación,
 se utiliza para validar números de identificación; tales como el IMEI de los
-celulares, tarjetas de crédito, etc.
+celulares, tarjetas de crédito, etc. 
 
 Este algoritmo es simple. Obtenemos la reversa del número a verificar (que
 solamente contiene dígitos [0-9]); a todos los números que ocupan una posición
