@@ -6,16 +6,6 @@ let ccv = document.getElementById('ccvText');
 let expirationDate = document.getElementById('date');
 let showMessage = document.getElementById('validationMessage');
 
-//boton de validar
-//validation.addEventListener('click', validateForm()
-    // function(){
-    //     let valueCN = cardNumber.value;
-    //     let maskifyValue = validator.maskify(valueCN);
-    //     document.getElementById('cardNumber').value = maskifyValue;
-    //     console.log(validator.isValid(valueCN));
-    //     console.log(validator.maskify(valueCN));
-    // }
-//);
 
 //Solo ingrese números
 cardNumber.addEventListener('keypress', function (e) {
@@ -25,7 +15,6 @@ cardNumber.addEventListener('keypress', function (e) {
 });
 function onlyNumbers(e) {
     let key = e.charCode;
-    //console.log(key);
     return key >= 48 && key <= 57;
 }
 
@@ -42,10 +31,10 @@ function validateForm() {
          let validation = validator.isValid(valueCN);
 
          if (validation == true){
-            showMessage.innerHTML = 'Transaction Aproved';
+            showMessage.innerHTML = 'Transaccción Aprovada';
 
          } else {
-            showMessage.innerHTML = 'Transaction denied';
+            showMessage.innerHTML = 'Transacción Denegada';
          }
 
     if (dataCCV === ''){
@@ -61,19 +50,6 @@ function validateForm() {
 
 }
 validation.addEventListener('click', validateForm);
-
-// function validateForm(){
-//     if(valueCN ==''){
-//         return alert('Ingresa un número de tarjeta');
-//     } if (valueCV < 16){
-//         return alert('Ingresa los 16 números válidos');
-//     } 
-
-
-// }
-
-
-
 console.log(validator);
 
 
