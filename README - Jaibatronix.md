@@ -3,7 +3,7 @@
   _Jaibatronix_ Inc. Es una corporación dedicada a la venta y reparación de electrónicos desde 2019, debido a la paandemia, las ventas bajaron considerablemente, puesto que los servicios se ofrecian de manera presencial, así que optaron por una alternativa, la que fue, las ventas Online, asi es como surge este proyecto.
 
 ## Imagen final del proyecto
-
+![ImagenFinal](https://github.com/Shatterdome01/CDMX013-card-validation/blob/main/Mockups/Final-Project.png?raw=true)
 
 ## Usuarios
   Los usuarios posibles a utilizar esta página, son personas de 18 años en adelante, es para todo público que requiera de algun producto.
@@ -17,3 +17,4 @@
   El feedback recibido, del primer prototipo no fueron cambiós drásticos, fue mas en cuanto a tipos de letra, que fueran algunos agradables al usuario y que la paleta de colores a utilizar fuera armónica, ya en el ultimo feedback, como toda mi página es en español, y el mensaje que indicaba una tarjeta valida o invalida se había puesto en inglés, eso causaba conflicto, entonces recomendaron dejar todo en un solo idioma.
 
 ### Prototipo Final.
+![Final-prototype](https://github.com/Shatterdome01/CDMX013-card-validation/blob/main/Mockups/Final-Prototype.png?raw=true)
